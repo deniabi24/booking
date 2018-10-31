@@ -7,7 +7,7 @@
 	<meta name="author" content="Deni Abisuma">
 	<meta name="keyword" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Miminium</title>
+  <title><?php echo $judul; ?></title>
 
   <!-- start: Css -->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/bootstrap.min.css">
@@ -16,15 +16,21 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/font-awesome.min.css"/>
   <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/simple-line-icons.css"/>
   <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/animate.min.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/select2.min.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/bootstrap-material-datetimepicker.css"/>
   <link href="<?php echo base_url() ?>asset/css/style.css" rel="stylesheet">
   <!-- end: Css -->
 
   <link rel="shortcut icon" href="<?php echo base_url() ?>asset/img/logomi.png">
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
+  <style>
+    .dtp > .dtp-content{
+      max-width: 400px !important;
+    }
+    .dtp .dtp-close > a > i{
+      display: none;
+    }
+  </style>
+  
     </head>
 
 <body id="mimin" class="dashboard">
@@ -86,12 +92,12 @@
                       <h1 class="animated fadeInLeft">21:00</h1>
                       <p class="animated fadeInRight">Sat,October 1st 2029</p>
                     </li>
-                    <li class="active"><a href="<?php base_url() ?>dashboard">
+                    <li class="dashboard"><a href="<?php base_url() ?>dashboard">
                       <span class="fa-home fa"></span>
                       Dashboard</a>
                     </li>
 
-                    <li class="ripple">
+                    <li class="booking ripple">
                       <a class="tree-toggle nav-header"><span class="fa-calendar fa"></span> Booking 
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
@@ -101,13 +107,13 @@
                       </ul>
                     </li>
 
-                    <li class="ripple">
+                    <li class="transaksi ripple">
                       <a class="tree-toggle nav-header"><span class="icons icon-credit-card"></span> Transaction 
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
-                          <li><a href="">Data Booking</a></li>
-                          <li><a href="">Input Booking</a></li>
+                          <li><a href="<?php echo base_url()?>transaksi">Data Transaksi</a></li>
+                          <li><a href="<?php echo base_url()?>transaksi/add">Input Transaksi</a></li>
                       </ul>
                     </li>
                   </ul>

@@ -17,11 +17,11 @@ class Dashboard extends CI_Controller
 	}
 
 	public function index(){
-		
+		$data['judul'] = '150 FutsallApp';
 		$data['agenda_data'] = $this->m->showAgenda();
 		$data['transaksi'] = $this->m->getDataTransaksi();
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header', $data);
 		$this->load->view('pages/dashboard', $data);
 		$this->load->view('layout/footer');
 	}

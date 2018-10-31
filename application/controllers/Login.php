@@ -10,6 +10,7 @@ class Login extends CI_Controller {
 	public function index($error = NULL)
 	{
 		$data = array(
+			'judul' =>'150 FutsallApp',
 			'tittle' => '150',
 			'error' => $error
 		);

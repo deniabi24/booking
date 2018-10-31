@@ -49,6 +49,10 @@
 
 <!-- plugins -->
 <script src="<?php echo base_url() ?>asset/js/plugins/moment.min.js"></script>
+<script src="<?php echo base_url() ?>asset/js/plugins/jquery.datatables.min.js"></script>
+<script src="<?php echo base_url() ?>asset/js/plugins/datatables.bootstrap.min.js"></script>
+<script src="<?php echo base_url() ?>asset/js/plugins/bootstrap-material-datetimepicker.js"></script>
+<script src="<?php echo base_url() ?>asset/js/plugins/select2.full.min.js"></script>
 <script src="<?php echo base_url() ?>asset/js/plugins/flot/jquery.flot.min.js"></script>
 <script src="<?php echo base_url() ?>asset/js/plugins/flot/jquery.flot.pie.min.js"></script>
 <script src="<?php echo base_url() ?>asset/js/plugins/flot/jquery.flot.time.min.js"></script>
@@ -60,6 +64,8 @@
 
 <!-- custom -->
 <script src="<?php echo base_url() ?>asset/js/main.js"></script>
+<script src="<?php echo base_url() ?>asset/js/datatrans.js"></script>
+
 
 <!-- end: Javascript -->
 </body>

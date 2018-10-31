@@ -3,11 +3,11 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="description" content="Miminium Admin Template v.1">
-  <meta name="author" content="Isna Nur Azis">
+  <meta name="description" content="FutsallApp v.1">
+  <meta name="author" content="Deni Abisuma">
   <meta name="keyword" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Miminium</title>
+  <title>150 FutsallApp</title>
 
   <!-- start: Css -->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/bootstrap.min.css">
