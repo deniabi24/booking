@@ -65,6 +65,42 @@
 <!-- custom -->
 <script src="<?php echo base_url() ?>asset/js/main.js"></script>
 <script src="<?php echo base_url() ?>asset/js/datatrans.js"></script>
+<script>
+      // ajax request select paket
+    function isiOtomatis(){
+                var id_paket = $("#paket").val();
+                $.ajax({
+                    dataType:'json',
+                    url: '<?php echo base_url('transaksi/getDataPaket'); ?>',
+                    data:"id_paket="+id_paket ,
+                    method:'post',
+                }).success(function (data) {
+                    // console.log(data[0].harga_paket);
+                    $("#hargaPaket").val(data[0].harga_paket);
+                    $("#durasi").focus();
+                    
+                });
+     };
+
+     function getSubtotal(){
+      var durasi = $("#durasi").val();
+      var harga = $("#hargaPaket").val();
+      subtotal = harga*durasi;
+      $("#subtotal").val(subtotal);
+      $("#subtotal").focus();
+     }
+
+     function getTotal(){
+      var diskon = $("#diskon").val();
+      var subtotal = $("#subtotal").val();
+      totalDiskon = subtotal*diskon;
+      total = subtotal-totalDiskon;
+      $("#total").val(total);
+      $("#total").focus();
+     }
+</script>
+
+
 <!-- end: Javascript -->
 </body>
 </html>

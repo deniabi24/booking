@@ -10,18 +10,18 @@
   <title><?php echo $judul; ?></title>
 
   <!-- start: Css -->
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo site_url() ?>asset/css/bootstrap.min.css">
 
   <!-- plugins -->
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/font-awesome.min.css"/>
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/simple-line-icons.css"/>
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/animate.min.css"/>
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/select2.min.css"/>
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/bootstrap-material-datetimepicker.css"/>
-  <link href="<?php echo base_url() ?>asset/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="<?php echo site_url() ?>asset/css/plugins/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo site_url() ?>asset/css/plugins/simple-line-icons.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo site_url() ?>asset/css/plugins/animate.min.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo site_url() ?>asset/css/plugins/select2.min.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo site_url() ?>asset/css/plugins/bootstrap-material-datetimepicker.css"/>
+  <link href="<?php echo site_url() ?>asset/css/style.css" rel="stylesheet">
   <!-- end: Css -->
 
-  <link rel="shortcut icon" href="<?php echo base_url() ?>asset/img/logomi.png">
+  <link rel="shortcut icon" href="<?php echo site_url() ?>asset/img/logomi.png">
   <style>
     .dtp > .dtp-content{
       max-width: 400px !important;
@@ -63,13 +63,13 @@
               <ul class="nav navbar-nav navbar-right user-nav">
                 <li class="user-name"><span>Administrator</span></li>
                   <li class="dropdown avatar-dropdown">
-                   <img src="<?php echo base_url() ?>asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
+                   <img src="<?php echo site_url() ?>asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
                    <ul class="dropdown-menu user-dropdown">
                      
                      <li class="more">
                       <ul>
                         <li><a href=""><span class="fa fa-cogs"></span></a></li>
-                        <li><a href="<?php base_url() ?>login/logMeOut"><span class="fa fa-power-off "></span></a></li>
+                        <li><a href="<?php site_url() ?>login/logMeOut"><span class="fa fa-power-off "></span></a></li>
                       </ul>
                     </li>
                   </ul>
@@ -92,7 +92,7 @@
                       <h1 class="animated fadeInLeft">21:00</h1>
                       <p class="animated fadeInRight">Sat,October 1st 2029</p>
                     </li>
-                    <li class="dashboard"><a href="<?php base_url() ?>dashboard">
+                    <li class="dashboard"><a href="<?php site_url() ?>dashboard">
                       <span class="fa-home fa"></span>
                       Dashboard</a>
                     </li>
@@ -102,8 +102,8 @@
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
-                          <li><a href="">Data Booking</a></li>
-                          <li><a href="">Input Booking</a></li>
+                          <li><a href="<?php echo site_url() ?>booking">Data Booking</a></li>
+                          <li><a href="<?php echo site_url() ?>booking/add">Input Booking</a></li>
                       </ul>
                     </li>
 
@@ -112,8 +112,8 @@
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
-                          <li><a href="<?php echo base_url()?>transaksi">Data Transaksi</a></li>
-                          <li><a href="<?php echo base_url()?>transaksi/add">Input Transaksi</a></li>
+                          <li><a href="<?php echo site_url()?>transaksi">Data Transaksi</a></li>
+                          <li><a href="<?php echo site_url()?>transaksi/add">Input Transaksi</a></li>
                       </ul>
                     </li>
                   </ul>
