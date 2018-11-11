@@ -14,11 +14,11 @@
     	<div class="col-md-12 padding-0">
     		<div class="col-md-12 panel" style="padding:50px;padding-bottom:70px;">
     			<form action="<?php echo base_url() ?>transaksi/add_transaksi" method="post">
-
+                    <div class="alert alert-info alert-dismissable"><label class="badge" style="background: #ffffff;color:#333;"><span class="fa fa-info"></span></label> <?php echo $info; ?> </div>
     				<div class="form-group form-animate-text">
                         <input name="tanggal_transaksi" type="text" class="form-text datetime" required>
                         <span class="bar"></span>
-                        <label><span class="fa fa-calendar"></span> Tanggal Transaksi</label>
+                        <label><span class="fa fa-calendar"></span> Pilih Tanggal Transaksi</label>
                     </div>
                     <div class="form-group">
     					<label for="paket" style="font-size: 1.4em;"><span class="icons icon-clock"></span> Pilih Paket</label><br>

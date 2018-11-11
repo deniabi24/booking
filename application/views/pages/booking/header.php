@@ -10,17 +10,16 @@
   <title><?php echo $judul; ?></title>
 
   <!-- start: Css -->
-  <link rel="stylesheet" type="text/css" href="<?php echo site_url() ?>asset/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/bootstrap.min.css">
 
-  <!-- plugins -->
-  <link rel="stylesheet" type="text/css" href="<?php echo site_url() ?>asset/css/plugins/font-awesome.min.css"/>
-  <link rel="stylesheet" type="text/css" href="<?php echo site_url() ?>asset/css/plugins/simple-line-icons.css"/>
-  <link rel="stylesheet" type="text/css" href="<?php echo site_url() ?>asset/css/plugins/animate.min.css"/>
-  <link rel="stylesheet" type="text/css" href="<?php echo site_url() ?>asset/css/plugins/bootstrap-material-datetimepicker.css"/>
-  <link href="<?php echo site_url() ?>asset/css/style.css" rel="stylesheet">
-  <!-- end: Css -->
+    <!-- plugins -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/simple-line-icons.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/animate.min.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/plugins/fullcalendar.min.css"/>
+  <link href="<?php echo base_url() ?>asset/css/style.css" rel="stylesheet">
 
-  <link rel="shortcut icon" href="<?php echo site_url() ?>asset/img/logomi.png">
+  <link rel="shortcut icon" href="<?php echo base_url() ?>asset/img/logomi.png">
   <style>
     .dtp > .dtp-content{
       max-width: 400px !important;
@@ -62,7 +61,7 @@
               <ul class="nav navbar-nav navbar-right user-nav">
                 <li class="user-name"><span>Administrator</span></li>
                   <li class="dropdown avatar-dropdown">
-                   <img src="<?php echo site_url() ?>asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
+                   <img src="<?php echo base_url() ?>asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
                    <ul class="dropdown-menu user-dropdown">
                      
                      <li class="more">

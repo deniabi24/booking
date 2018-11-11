@@ -25,7 +25,8 @@ class Transaksi extends CI_Controller
 			'judul' => 'Transaksi',
 			'header' => 'Data Transaksi',
 			'subheader' => 'Lihat Data Transaksi',
-			'result' => $this->m->getDataTransaksi()
+			'result' => $this->m->getDataTransaksi(),
+
 		);
 
 		$this->load->view('layout/header', $data);
@@ -51,6 +52,7 @@ class Transaksi extends CI_Controller
 			'judul' => 'Transaksi',
 			'header' => 'Form Transaksi',
 			'subheader' => 'Input Data Transaksi',
+			'info' => 'Harap Mengisi Semua Data Dengan Benar'
 		);
 
 		$this->load->view('layout/header', $data);

@@ -2,12 +2,22 @@
 
 class M_booking extends CI_Model {
 
-	public $variable;
+	public function getDataBooking(){
+		$this->db->select('start');
+		$this->db->select('end');
+		$this->db->select('status');
+		$this->db->from('tbl_booking');
+		$query = $this->db->get();
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		}else{
+			return false;
+		}
+	}
 
-	public function __construct()
-	{
-		parent::__construct();
-		
+	public function inputBooking($data){
+		$this->db->insert('tbl_booking', $data);
+		return $this;
 	}
 
 }
